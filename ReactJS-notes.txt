@@ -119,3 +119,18 @@ ReactJS Notes
           Does not merge, it replaces the old state.
 
         Can create custom hooks
+
+      Stateful components - are components that manage state. (app.js in this example)
+        Smart components
+        Container components
+        If every component is managing state you end up with spaghetti code.
+        Makes it very hard to do anything, also makes the app unpredictable
+      Stateless components - are components that do not manage state. (Person component)
+        Or also called presentational components
+        stateless, or dumb components
+
+      Have as many stateless, presentational components as possible.
+      Use stateful components when you need to manage state.
+
+      Bind sytax is more efficient
+      47
