@@ -1,6 +1,8 @@
 ReactJS Notes
   SPA - single page application
   MPA - multiple page application
+    Don't add more index.html files.
+    Use multiple create-react-app's
 
   linting - notifies you if you are writing sub-optimal code
 
@@ -14,3 +16,61 @@ ReactJS Notes
 
   npm start
     runs the react server
+  npm build
+    builds the react app.
+    Adds everything into one file (js?)
+
+  File Structure
+    index.html
+      only html file you should add.
+      Add more html using the jsx in the render methods of js
+    manifest.json
+      defines meta-data about application
+    src/
+      Where all the source files for the application are
+    App.js
+      Is the first component in the project
+      Components are usually classes.
+    File extensions can end with .jsx
+
+  Components
+    Typical react project could be depicted as a component tree.
+
+    A component is just a function that returns some jsx
+    All components need 'react' import.
+    imports begin with capital character.
+    <Component />
+      Use self closing tags when using the imported components.
+
+
+    render()
+      Creates html to render to the dom
+      html in this method is jsx
+      This 'html' is syntactical sugar.
+        React.createElement('ele', arg, children)
+          Takes 3 arguments.
+          Created with the syntactical sugar.
+      use className instead of class.
+        class is a reserved name in javascript
+      jsx must have one root element.
+
+    Functional Components
+      rfc - vscode shortcut
+      "presentational", "dumb" or "stateless" components
+      Is basically a function that returns jsx. Does not have anything else going on with it.
+
+    Class-based Components
+      "containers", "smart" or "stateful" components
+
+
+    Dynamic content
+      <h1>Random number is {Math.floor(Math.random() * 30)} !</h1>
+        can be outputted in the string
+        on line expression
+        can call functions that way
+
+      Props
+        Properties are attributes you add onto a component.
+
+
+
