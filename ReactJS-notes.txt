@@ -66,11 +66,28 @@ ReactJS Notes
     Dynamic content
       <h1>Random number is {Math.floor(Math.random() * 30)} !</h1>
         can be outputted in the string
-        on line expression
+        inline expression
         can call functions that way
 
       Props
-        Properties are attributes you add onto a component.
+        Properties (short for) - are attributes you add onto a component.
+        {props}
+          Using functional components
+        {this.props}
+          When using classed based components
+
+      Children
+        Refers to any element between the opening and closing tag of the components.
+          instead of: <Person/>
+          its this: <Person>I am children</Person>
 
 
+    State
+      having state in all your components will make the application unpredictable the larger it grows.
+        Other components can change other components state
+      state is a reserved word
+      state = {}
+        is an object
+
+      If state changes, it will cause React to rerender the dom.
 
