@@ -1,1 +1,16 @@
 ReactJS Notes
+  SPA - single page application
+  MPA - multiple page application
+
+  linting - notifies you if you are writing sub-optimal code
+
+  Webpack as bundler (standard these days)
+  Babel compiles es6 ti es5
+
+  npm install -g create-react-app
+  create-react-app [appName]
+    bootstraps react project.
+    https://github.com/facebook/create-react-app
+
+  npm start
+    runs the react server
