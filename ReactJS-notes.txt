@@ -156,3 +156,17 @@ ReactJS Notes
       (Thank goodness theres a alternative to this)
     Can create a if statement and pass the component in the render method.
       (See resources/list-conditionals01/src/App.js:52)
+      Preferred way of outputting conditional content
+
+    use map method to render dynamic content.
+      common pattern for printing lists from an array.
+      {this.state.persons.map(person => { <Person name=person.name/> })}
+      should assign a key property.
+
+    Always update state in immutable fashion
+      Create a copy
+      change that
+      then use setState to update with modified copy.
+
+    using .findIndex and .find methods on the this.state.persons array to manipulate it
+      (example code is in resources/conditional-content-finished)
