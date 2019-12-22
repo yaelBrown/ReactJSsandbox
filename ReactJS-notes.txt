@@ -132,5 +132,27 @@ ReactJS Notes
       Have as many stateless, presentational components as possible.
       Use stateful components when you need to manage state.
 
-      Bind sytax is more efficient
-      47
+      Bind syntax is more efficient
+
+      2 Way binding - listening to changes and Update state, props and other changes. ?
+
+
+  Styling
+    2 ways of Styling
+      importing css file
+      inline-styles - creating a style method in render method components
+        style is a object that comes before the return.
+        have to use js style css names.
+        Will be scoped to the component and cannot leverage full css
+          (not sure what features you cannot use)
+        the values are strings.
+        const style = { font: 'inherit' }
+        <button style={style}></button>
+
+
+  JSX conditionals
+    uses ternary operator and boolean in state. Renders on change
+      (confusing)
+      (Thank goodness theres a alternative to this)
+    Can create a if statement and pass the component in the render method.
+      (See resources/list-conditionals01/src/App.js:52)
