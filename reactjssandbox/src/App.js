@@ -10,6 +10,8 @@ export default class App extends Component {
     ]
   }
 
+  addToAge = (age) => age++;
+
   switchNameHandler = () => {
     console.log('Was clicked');
   }
@@ -20,7 +22,9 @@ export default class App extends Component {
         {/* <Person name="Yael" age="32"/>
         <Person name="Cookie" age="31"/>
         <Person name="Donut" age="30"/> */}
+
         <button onClick={this.switchNameHandler}>Switch Name</button>
+
         <Person name={this.state.persons[0].name} age={this.state.persons[0].age} />
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age} />
         <Person name={this.state.persons[2].name} age={this.state.persons[2].age} />

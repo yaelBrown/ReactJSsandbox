@@ -10,6 +10,7 @@ ReactJS Notes
   Babel compiles es6 ti es5
 
   npm install -g create-react-app
+  create-react-app my-app --scripts-version 1.1.5
   create-react-app [appName]
     bootstraps react project.
     https://github.com/facebook/create-react-app
@@ -83,6 +84,9 @@ ReactJS Notes
 
 
     State
+      Only available in class based components
+      Using class based components and state this way is the default way of managing state
+
       having state in all your components will make the application unpredictable the larger it grows.
         Other components can change other components state
       state is a reserved word
@@ -90,4 +94,28 @@ ReactJS Notes
         is an object
 
       If state changes, it will cause React to rerender the dom.
+      Props also cause the DOM to rerender
 
+      Event handling
+        Methods should have the name suffix 'handler' because you are not directly calling it
+        https://reactjs.org/docs/events.html#supported-events - Support react events. (SyntheticEvent)
+
+        Don't mutate state directly
+        use setState() to change state
+          Merges with existing state
+
+      Hooks
+        Only work with functional components
+        (React 16.8+)
+
+        useEffect()
+
+        useState()
+          hook that allows you to manage state in a functional component
+          returns a array with exactly 2 elements and always 2 elements
+            1st ele = current state
+            2nd ele = function that allows you to update state
+          Can use array destructuring to get the elements of the useState method
+          Does not merge, it replaces the old state.
+
+        Can create custom hooks
