@@ -170,3 +170,27 @@ ReactJS Notes
 
     using .findIndex and .find methods on the this.state.persons array to manipulate it
       (example code is in resources/conditional-content-finished)
+
+
+  Error handling
+    (resources/debugging-01-finished)
+    Higher Order Component - Wraps another component such ErrorBoundary component.
+      It does something with componentDidCatch if there is an error for example. To prevent the front-end from catching
+      React version of try-catch
+
+    Only use ErrorBoundary for code that might fail that you have no control over.
+      That way you can show your own custom error message.
+
+
+  More components
+    Assests/ - For holding images
+    Containers/ -  Holds containers, such as app.js file and app.test.js file
+      manages state and manipuates the state.
+    Components/ - Holds components
+
+    clear responsibility components
+    narrowly focused
+    granular components
+    use as many functional components as possible`
+
+
