@@ -28,8 +28,8 @@ export default class App extends Component {
   }
 
   render() {
+    console.log('app.js render');
     return (
-      console.log('app.js render');
       <div className="App">
         {/* <Person name="Yael" age="32"/>
         <Person name="Cookie" age="31"/>

@@ -225,3 +225,8 @@ ReactJS Notes
           rerender cycle is bad for performance
         componentWillMount() - use this for preparing state for props ?
           Will be removed in a future release.
+
+        shouldComponentUpdate(nextProps, nextState) - Used for react to determine if the dom should update
+          Usually don't want to make changes to this. It could easily break application.
+        getSnapshotBeforeUpdate(prevProps, prevState) - Used for last-minute DOM ops
+        componentDidUpdate() - Runs when update is finished.
