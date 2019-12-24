@@ -59,9 +59,17 @@ ReactJS Notes
       rfc - vscode shortcut
       "presentational", "dumb" or "stateless" components
       Is basically a function that returns jsx. Does not have anything else going on with it.
+      access to state (useState())
+      Does not support Lifecycle hooks
+      Use when you dont want to manage state, or have access to lifecycle hooks.
 
     Class-based Components
       "containers", "smart" or "stateful" components
+      Use if you need to manage state or access to Lifecycle hooks and don't want to use React Hooks
+      extends ComponentAccess to State
+      Lifecycle Hooks
+      Majority of projects use class based approach
+
 
 
     Dynamic content
@@ -86,6 +94,7 @@ ReactJS Notes
     State
       Only available in class based components
       Using class based components and state this way is the default way of managing state
+      Is just variables, but is managed by the component.
 
       having state in all your components will make the application unpredictable the larger it grows.
         Other components can change other components state
@@ -103,6 +112,14 @@ ReactJS Notes
         Don't mutate state directly
         use setState() to change state
           Merges with existing state
+
+    Props
+      short for Properties
+      props are variables passed to it by its parent component
+
+    State vs Props
+      In a React component, props are variables passed to it by its parent component. State on the other hand is still variables, but directly initialized and managed by the component.
+      The state can be initialized by props.
 
       Hooks
         Only work with functional components
@@ -193,4 +210,18 @@ ReactJS Notes
     granular components
     use as many functional components as possible`
 
-
+    Component Lifecycle * (possible interview question)
+      Only for classed-based components
+        Component Creation - Rendered for the first time.
+          constructor(props)
+          have to call super(props)
+          basic initialization work - setting initial state
+        getDerivedStateFromProps(props,state)
+          sync state
+        render() - suppose to only render jsx
+          render child components
+        componentDidMount() - used for getting data from web, cause the application to rerender
+          dont call setState synchronously here, unless its after the event of receiving a promise
+          rerender cycle is bad for performance
+        componentWillMount() - use this for preparing state for props ?
+          Will be removed in a future release.
