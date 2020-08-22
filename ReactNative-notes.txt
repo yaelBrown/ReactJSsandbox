@@ -1,0 +1,13 @@
+React Native notes
+
+
+
+Setup on Physical Device
+  run 'npm start' - Starts React Native Bundler
+
+  install expo app from App Store or Google Play Store
+
+  Scan QR Code
+    if does not work switch CONNECTION to Tunnel or LAN. Maybe Local works?
+
+  Control+c - to stop bundler
