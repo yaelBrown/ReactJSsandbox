@@ -22,6 +22,7 @@ describe('App component', () => {
 
   test('renders reactjs logo', () => {
     const imageElement = screen.getByAltText("logo");
+    console.log("something")
     expect(imageElement).toBeInTheDocument();
   })
 })
