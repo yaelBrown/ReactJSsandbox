@@ -14,7 +14,7 @@ afterEach(() => {
   container = null;
 });
 
-describe('App component', () => {  
+describe('App compoifjao;ifjonent', () => {  
   test('renders learn react link', () => {
     const linkElement = screen.getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
