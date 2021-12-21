@@ -38,3 +38,11 @@
     width: 16px;
     height: 16px;
 }
+
+#ctt-input {
+    width: 250px;
+    margin: auto;
+    padding: auto 16px auto 16px;
+    /* border: 1px; */
+    /* display: border-box; */
+}

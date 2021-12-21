@@ -13,13 +13,13 @@ function DropdownElemenet(props) {
 
     const [dropDownState, setDropDownState] = useState(initialState)
 
-    const dropDownItem = (n) => (<div className="dropDownItem" onClick={() => changeHandler(n)}>{n}</div>) 
+    const dropDownItem = (n, i) => (<div className="dropDownItem" key={i} onClick={() => changeHandler(n)}>{n}</div>) 
 
     const renderChoices = () => {
         let out = []
         if (dropDownState.isOpen) {
-            dropDownState.choices.map(e => {
-                return out.push(dropDownItem(e))
+            dropDownState.choices.map((e, i) => {
+                return out.push(dropDownItem(e, i))
             })
         }
         return out

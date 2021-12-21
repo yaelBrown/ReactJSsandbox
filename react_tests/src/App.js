@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <span>Selected Element: {state.selectedEl}</span>
-      {/* <InputElement data-testid="" /> */}
+      <InputElement testid="inp"/>
       <DropdownElemenet choices={options} style={{margin: "auto"}} onChange={onDropdownChange} />
     </div>
   );

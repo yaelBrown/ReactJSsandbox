@@ -1,9 +1,9 @@
 import React from 'react'
+import './style.css'
 
-export default function InputElement() {
+
+export default function InputElement(props) {
     return (
-        <div>
-            <input type="text"></input>
-        </div>
+        <input id="ctt-input" type="text" data-testid={props.testid} />
     )
 }
