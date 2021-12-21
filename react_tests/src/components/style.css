@@ -1,0 +1,40 @@
+#box-wrapper {
+    margin: auto;
+}
+
+#box, .dropDownItem {
+    width: 250px;
+    padding: 1em;
+    border: 1px solid #141414;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: left;
+}
+
+#box {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#box:nth-child(1) {
+    /* text-align: left; */
+    flex-grow: 2;
+}
+
+.dropDownItem {
+    border-radius: 0px;
+    border-top: none;
+    /* box-shadow: 3px 3px 3px black; */
+}
+
+.dropDownItem:hover {
+    background: #eeeeee;
+    color: #000;
+}
+
+#dArrow {
+    width: 16px;
+    height: 16px;
+}

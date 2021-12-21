@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import DropdownElemenet from './components/DropdownElemenet';
 import InputElement from './components/InputElement';
+import { useState } from 'react';
 
 function App() {
+
+  const options = [
+    "Yael",
+    "Steve",
+    "Lili",
+    "Bob"
+  ]
+
+  const initialState = {
+    selectedEl: ""
+  }
+
+  const [state, setState] = useState(initialState)
+
+  const onDropdownChange = v => setState({...state, selectedEl: v})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" data-testid="react-logo"/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <InputElement data-testid="" />
+      <span>Selected Element: {state.selectedEl}</span>
+      {/* <InputElement data-testid="" /> */}
+      <DropdownElemenet choices={options} style={{margin: "auto"}} onChange={onDropdownChange} />
     </div>
   );
 }
