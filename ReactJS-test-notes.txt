@@ -1,0 +1,17 @@
+
+Testing heiarchy - 
+    high value features
+    edge cases
+    easy to break
+    basic react component testing
+        user interactions
+        conditional rendering
+        utils/hooks
+
+Testing sample app - https://github.com/MitchelSt/react-testing-starter
+
+unit - components load
+integration - 
+    cypress package
+    testing playground plugin
+end-to-end
